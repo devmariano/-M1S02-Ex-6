@@ -8,10 +8,10 @@ multiplicar.onclick = function(){
     var text = ''
     for(var i=1; i<=10; i++){
         var resultado = i*multiplicador
-        text = text+i+' * '+multiplicador+" = "+resultado+"<br>"
+        text = text+multiplicador+' * '+i+" = "+resultado+"<br>"
         //console.log(text)
     }
-    div.innerHTML = text;
+    div.innerHTML = "<BR>Resultado:<BR><BR>"+text;
 }else{
     div.innerHTML = "ERRO: Insira um valor entre 1 e 10!!!";
 }
